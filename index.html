@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Document</title>
+
+    <link rel="stylesheet" href="assets/style.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+
+  </head>
+  <body>
+    <div id="wrapper">
+      <div id="header" class="row">
+        <div class="col-12"><h1 id=" gameTitleDiv">Crystal Collector</h1></div>
+      </div>
+
+      <div class="row">
+        <div class="col-12">
+          <h1>Rules</h1>
+          <p>
+            You will be given a random number as Target. There are four gems
+            below.Each gem will have a random number hidden and will be added to
+            you score when clicked.You will win the game only when you match the score EXACTLY with the
+            target. You will loose if the score is high.<br>
+            Game depends on luck as well.
+          </p>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col-3" id="gem1">
+          <img
+            src="https://www.gemsny.com/video-stone/62634/Images/62634/Lv2/img10.jpg"
+            alt="gem1"
+          />
+        </div>
+        <div class="col-3" id="gem2">
+          <img
+            src="https://www.gemsny.com/images/POPIMG/55064/FL.jpg"
+            alt="gem2"
+          />
+        </div>
+        <div class="col-3" id="gem3">
+          <img
+            src="https://www.gemsny.com/images/POPIMG/Generic-TZ0013/FL.jpg"
+            alt="gem3"
+          />
+        </div>
+        <div class="col-3" id="gem4">
+          <img
+            src="https://www.gemsny.com/video-stone/69390/Images/69390/Lv2/img15.jpg"
+            alt="gem4"
+          />
+        </div>
+      </div>
+
+      <br />
+
+      <div id="scores" class="row">
+        <div class="col-6">
+          <h1>Target</h1>
+          <h4><span id="target"></span></h4>
+        </div>
+        <div class="col-6">
+          <h1>MyScore</h1>
+          <h4><span id="score"></span></h4>
+        </div>
+      </div>
+
+      <div id="winOrLoose" class="row">
+        <div class="col-6">
+          <h1>Win</h1>
+          <h4><span id="wins">0</span></h4>
+        </div>
+        <div class="col-6">
+          <h1>loose</h1>
+          <h4><span id="loose">0</span></h4>
+        </div>
+      </div>
+    </div>
+
+
+    <script src="assets\game.js"></script>
+  </body>
+</html>
